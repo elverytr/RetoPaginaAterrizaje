@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/styles/estilos.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!---------------------------CONTENEDOR PRINCIPAL------------------------------>
+    <div class="container-fluid">
+      <div id="header" class="card-header bg-dark bg-gradient fixed-top">
+        <a class="" href="#">
+          <img
+            id="header-img"
+            class="col-sm-1 col-1 col-sm-1 logo"
+            src="assets/img/logo.png"
+          />
+        </a>
+        <!------------------------------NAVBAR------------------------------>
+        <nav id="nav-bar" class="navbar float-end">
+          <a href="#sec-1" class="nav-link link-light">Newsletter</a>
+          <a href="#sec-2" class="nav-link link-light">Presentación</a>
+          <a href="#sec-3" class="nav-link link-light">Productos</a>
+        </nav>
+      </div>
+      <div class="contenido">
+      <!-------------------------------SUBSCRIPCIÓN------------------------------>
+      <h3 id="sec-1" class="tit-productos tit-1">Subscríbete!</h3>
+      <div class="seccion" id="form">
+        <div class="sec-email">
+          <form
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+            class="form"
+          >
+            <label for="email">
+              <input
+                type="email"
+                id="email"
+                placeholder="Ingresa tu correo electrónico"
+                name="email"
+                required
+              />
+            </label>
+            <button type="submit" id="submit">Enviar</button>
+          </form>
+          <p class="info-email">
+            Introduce tu email para que seas el primero en recibir nuestras
+            promociones.
+          </p>
+        </div>
+      </div>
+      <!-------------------------------PRESENTACIÓN DE VIDEO------------------------------>
+      <h3 id="sec-2" class="tit-productos">Los robóts mas increibles</h3>
+      <div class="seccion" id="video">
+        <embed
+          class="embed-video"
+          src="https://www.youtube.com/embed/1cjFposQiHg"
+        />
+        <hr/>
+      </div>
+      <!-------------------------------PRODUCTOS------------------------------>
+      <h3 id="sec-3" class="tit-productos">Productos</h3>
+      <div class="seccion" id="productos">        
+        <div class="cards">
+            <div class="card"><img src="assets/img/robot1.png"><h3>CudripeBot</h3></div>
+            <div class="card"><img src="assets/img/robot2.png"><h3>MachineBot</h3></div>
+            <div class="card"><img src="assets/img/robot3.png"><h3>HumanBot</h3></div>
+        </div>
+        <hr/>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
